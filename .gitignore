@@ -1,0 +1,56 @@
+# === GLOBAL ===
+.env
+.env.*
+*.env
+*.pyc
+__pycache__/
+*.log
+*.sqlite3
+.DS_Store
+.idea/
+.vscode/
+*.bak
+*.swp
+
+# === PYTHON / DJANGO ===
+*.py[cod]
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+celerybeat-schedule
+
+# === BACKEND ===
+/backend/env/
+/backend/.env
+/backend/.env.*
+/backend/__pycache__/
+/backend/staticfiles/
+/backend/media/
+
+# === FRONTEND ===
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.env
+/frontend/.env.*
+
+# === DOCKER ===
+*.pid
+*.tar
+docker-compose.override.yml
+
+# === OTHER ===
+/*.local
+*.iml
+*.tmp
+*.cache
+coverage/
+htmlcov/
+*.coverage
+.pytest_cache/
+*.log
+
+# === MacOS/Linux artifacts ===
+ehthumbs.db
+Thumbs.db
+desktop.ini
