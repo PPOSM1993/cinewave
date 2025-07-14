@@ -26,15 +26,15 @@ INSTALLED_APPS = [
 
     # Local apps
     "apps.authentication",
-    "apps.cinema",
-    "apps.seats",
-    "apps.reservations",
-    "apps.tickets",
-    "apps.payments",
-    "apps.notifications",
-    "apps.analytics",
-    "apps.boleteros",
-    "apps.fidelizacion",
+    #"apps.cinema",
+    #"apps.seats",
+    #"apps.reservations",
+    #"apps.tickets",
+    #"apps.payments",
+    #"apps.notifications",
+    #"apps.analytics",
+    #"apps.boleteros",
+    #"apps.fidelizacion",
 ]
 
 MIDDLEWARE = [
@@ -115,3 +115,11 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
+
+
+AUTH_USER_MODEL = 'authentication.User'
+
+AUTHENTICATION_BACKENDS = [
+    'apps.authentication.backends.EmailUsernameRutBackend',  # primero el personalizado
+    'django.contrib.auth.backends.ModelBackend',
+]
