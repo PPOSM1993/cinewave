@@ -26,7 +26,7 @@ INSTALLED_APPS = [
 
     # Local apps
     "apps.authentication",
-    #"apps.cinema",
+    "apps.cinema",
     #"apps.seats",
     #"apps.reservations",
     #"apps.tickets",
