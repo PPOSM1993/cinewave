@@ -8,5 +8,5 @@ router.register(r'seats', SeatViewSet, basename='seat')
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('/search/', SeatSearchView.as_view(), name='seat-search'),
+    path('search/', SeatSearchView.as_view(), name='seat-search'),
 ]
