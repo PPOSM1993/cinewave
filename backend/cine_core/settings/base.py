@@ -23,11 +23,12 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "drf_spectacular",
+    'django_filters',
 
     # Local apps
     "apps.authentication",
     "apps.cinema",
-    #"apps.seats",
+    "apps.seats",
     #"apps.reservations",
     #"apps.tickets",
     #"apps.payments",
@@ -102,6 +103,8 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     ),
+    'DEFAULT_PAGINATION_CLASS': 'utils.pagination.StandardResultsSetPagination',
+    'PAGE_SIZE': 10,
 }
 
 SPECTACULAR_SETTINGS = {
