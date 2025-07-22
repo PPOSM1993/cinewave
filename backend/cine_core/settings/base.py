@@ -30,7 +30,7 @@ INSTALLED_APPS = [
     "apps.cinema",
     "apps.seats",
     #"apps.reservations",
-    #"apps.tickets",
+    "apps.tickets",
     #"apps.payments",
     #"apps.notifications",
     #"apps.analytics",
